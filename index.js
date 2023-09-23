@@ -14,6 +14,6 @@ app.post("/send-message", (req, res, next) => {
     });
 });
 
-app.listen(3000, undefined, () => {
+app.listen(process.env.PORT || 3000, undefined, () => {
     console.log("App is listening on port 3000");
 });
